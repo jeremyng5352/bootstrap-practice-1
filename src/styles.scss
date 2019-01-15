@@ -1,15 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
+// @import '/src/app/sass/reset';
 html,
 body {
     box-sizing: border-box;
-    width: 100vw;
     overflow-x: hidden;
 }
 
 * {
-    margin: 0;
-    letter-spacing: 1px;
     box-sizing: border-box;
     outline: none;
 }
