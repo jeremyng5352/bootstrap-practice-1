@@ -1,5 +1,60 @@
 @import '../../sass/variables';
-div.navigation-bar {
-    background: $grey;
-    height: 100vh;
+$horizontal-padding: 1.25rem;
+$grey-font: #A5AEB6;
+$light-grey-font: rgb(196, 205, 212);
+$background-grey: #344052;
+$background-darker-grey: #2D3646;
+div#navbar-container {
+    background: $background-grey;
+    width: 100%;
+    height: 100%;
+    color: $grey-font;
+    div#navbar-icon {
+        padding: 1.15rem $horizontal-padding;
+        width: 100%;
+        height: auto;
+        display: flex;
+        cursor: pointer;
+        color: white;
+        margin-bottom: 0.185rem;
+        img {
+            width: 24px;
+            height: 24px;
+            filter: invert(100);
+            margin-right: .7rem;
+        }
+        span {
+            font-size: 1.15rem;
+        }
+    }
+    ul#navbar-tabs {
+        text-transform: capitalize;
+        li {
+            padding: 0 $horizontal-padding;
+        }
+        li.navbar-header {
+            font-size: 0.75rem;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+        }
+        li.navbar-item {
+            padding-top: 0.825rem;
+            padding-bottom: 0.825rem;
+            font-size: 0.9rem;
+            color: $light-grey-font;
+            i {
+                width: 15px;
+                margin-right: 1rem;
+            }
+        }
+        ul.item-tabs {
+            li.navbar-item {
+                padding-left: $horizontal-padding*2;
+            }
+        }
+        .selected-item {
+            background: $background-darker-grey;
+            color: white !important;
+        }
+    }
 }

@@ -1,3 +1,27 @@
-<div class="navigation-bar row">
-    test
+<div id="navbar-container">
+    <div routerLink="" id="navbar-icon">
+        <img src="./../../../assets/main-logo.png" alt="main logo">
+        <span class="align-middle">AppStack</span>
+    </div>
+    <ul id="navbar-tabs">
+        <li class="navbar-header">Main</li>
+        <li class="navbar-item selected-item" (click)="dashboard.toggle()" mdbWavesEffect><i class="far fa-chart-bar"></i>Dashboard</li>
+        <ul class="item-tabs" mdbCollapse #dashboard="bs-collapse">
+            <li class="navbar-item  selected-item">Default</li>
+            <li class="navbar-item ">Analytics</li>
+            <li class="navbar-item ">Ecommerce</li>
+            <li class="navbar-item ">Social</li>
+            <li class="navbar-item ">Crypto</li>
+        </ul>
+        <li class="navbar-item "><i class="fab fa-trello"></i>Pages</li>
+        <li class="navbar-item "><i class="fas fa-desktop"></i> Layouts</li>
+        <li class="navbar-item "><i class="fas fa-book-open"></i>Documentation</li>
+        <li class="navbar-header">Components</li>
+        <li class="navbar-item "><i class="fas fa-th-large"></i> UI Elemetns</li>
+        <li class="navbar-item "><i class="fas fa-chart-pie"></i> Charts</li>
+        <li class="navbar-item "><i class="fab fa-wpforms"></i> Forms</li>
+        <li class="navbar-item "><i class="fas fa-list-ul"></i> Tables</li>
+        <li class="navbar-item "><i class="fas fa-heart"></i>Icons</li>
+        <li class="navbar-item "><i class="fas fa-map-marker-alt"></i> Maps</li>
+    </ul>
 </div>

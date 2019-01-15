@@ -1,0 +1,19 @@
+@import './../sass/variables';
+div#home-container {
+    padding: 0;
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+        section#navigation-bar {
+            height: 100vh;
+        }
+        section#dashboard {
+            background: $light-blue;
+        }
+    }
+    .row.no-gutters>[class^="col-"],
+    .row.no-gutters>[class*=" col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
