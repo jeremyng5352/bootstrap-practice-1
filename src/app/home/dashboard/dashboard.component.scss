@@ -34,6 +34,52 @@ div#dashboard-container {
             color: #333;
             font-weight: normal;
             margin-left: 0.5rem;
+            margin-right: 1rem;
+        }
+    }
+    .container-fluid {
+        margin-bottom: 2rem;
+        .row {
+            div.card-body {
+                background: white;
+                border-radius: 3px;
+                border: transparentize($color: #333, $amount: 0.8) solid 1px;
+                .card-header {
+                    background: transparent;
+                    color: black;
+                    font-weight: normal;
+                }
+            }
+            div.card-body.dashboard-card {
+                i {
+                    font-size: 2rem;
+                    margin-right: 1.5rem;
+                    align-self: center;
+                }
+                div.media-body {
+                    div.value {
+                        font-weight: normal;
+                        font-size: 1.25rem;
+                    }
+                    div.description {
+                        font-size: 0.8rem;
+                        font-weight: normal;
+                        color: grey;
+                    }
+                }
+            }
+            div.card-body.dashboard-card-2 {
+                padding: 0;
+                .card-content {
+                    height: 25rem;
+                }
+            }
+            div.card-body.dashboard-card-3 {
+                padding: 0;
+                .card-content {
+                    height: 20rem;
+                }
+            }
         }
     }
 }
