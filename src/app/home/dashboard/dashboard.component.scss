@@ -16,25 +16,24 @@ div#dashboard-container {
         i.fa-bell-slash {
             font-size: 1.2rem;
             color: grey;
-            margin-left: $HR-horizontal-margin;
-            margin-right: 0;
+            margin-right: $HR-horizontal-margin;
         }
         input.search-bar {
             border: transparent solid 1px;
         }
         .description {
             vertical-align: text-bottom;
+            margin-right: $HR-horizontal-margin;
         }
         img.profile-icon {
             width: 40px;
             height: 40px;
-            margin-left: $HR-horizontal-margin;
         }
         div.profile-name {
             color: #333;
             font-weight: normal;
             margin-left: 0.5rem;
-            margin-right: 1rem;
+            margin-right: 0.25rem;
         }
     }
     .container-fluid {
