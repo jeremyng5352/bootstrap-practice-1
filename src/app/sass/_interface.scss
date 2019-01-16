@@ -1,11 +1,19 @@
 @import './variables';
 .navbar-item {
-    padding-top: 0.825rem;
-    padding-bottom: 0.825rem;
+    padding: 0.825rem 1.25rem;
     font-size: 0.9rem;
-    color: $light-grey-font;
-    i {
-        width: 15px;
-        margin-right: 1rem;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+    section#navigation-bar {
+        height: 100vh;
     }
+}
+
+.row.no-gutters>[class^="col-"],
+.row.no-gutters>[class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
 }

@@ -1,5 +1,39 @@
-div {
-    width: 100%;
-    height: auto;
-    // background: black;
+@import './../../sass/interface';
+@import './../../sass/variables';
+$horizontal-padding: 1.25rem;
+div#dashboard-container {
+    background: $light-blue;
+    min-height: 100vh;
+    div#header-container {
+        background: white;
+        // header right section horizontal margin 
+        $HR-horizontal-margin: 1.25rem;
+        i.fa-bars {
+            font-size: 1.6rem;
+            margin-right: 2.25rem;
+        }
+        i.fa-comment,
+        i.fa-bell-slash {
+            font-size: 1.2rem;
+            color: grey;
+            margin-left: $HR-horizontal-margin;
+            margin-right: 0;
+        }
+        input.search-bar {
+            border: transparent solid 1px;
+        }
+        .description {
+            vertical-align: text-bottom;
+        }
+        img.profile-icon {
+            width: 40px;
+            height: 40px;
+            margin-left: $HR-horizontal-margin;
+        }
+        div.profile-name {
+            color: #333;
+            font-weight: normal;
+            margin-left: 0.5rem;
+        }
+    }
 }

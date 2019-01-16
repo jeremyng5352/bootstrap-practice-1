@@ -26,14 +26,16 @@ div#navbar-container {
     }
     .navbar-tabs {
         text-transform: capitalize;
-        li {
-            padding-left: $horizontal-padding;
-            padding-right: $horizontal-padding;
-        }
         li.navbar-header {
             font-size: 0.75rem;
-            padding-top: 0.25rem;
-            padding-bottom: 0.25rem;
+            padding: 0.25rem $horizontal-padding 0.25rem $horizontal-padding;
+        }
+        li.navbar-item {
+            color: $light-grey-font;
+            i {
+                width: 15px;
+                margin-right: 1rem;
+            }
         }
         ul.item-tabs {
             li.navbar-item {
