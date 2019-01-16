@@ -38,12 +38,12 @@ div#dashboard-container {
         }
     }
     .container-fluid {
-        margin-bottom: 2rem;
         .row {
             div.card-body {
                 background: white;
                 border-radius: 3px;
                 border: transparentize($color: #333, $amount: 0.8) solid 1px;
+                margin-bottom: 2rem;
                 .card-header {
                     background: transparent;
                     color: black;
