@@ -13,10 +13,14 @@ div#dashboard-container {
             margin-right: 2.25rem;
         }
         i.fa-comment,
-        i.fa-bell-slash {
+        i.fa-bell-slash,
+        i.fa-cog {
             font-size: 1.2rem;
             color: grey;
             margin-right: $HR-horizontal-margin;
+            &:nth-last-child(1) {
+                background: black;
+            }
         }
         input.search-bar {
             border: transparent solid 1px;

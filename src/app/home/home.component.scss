@@ -1,4 +1,15 @@
 @import './../sass/variables';
 div#home-container {
     padding: 0;
+    width: 100%;
+    align-items: stretch;
+    display: flex;
+    section#navigation-bar {
+        min-width: 240px;
+        max-width: 240px;
+        transition: all .3s ease-in-out;
+    }
+    section#dashboard {
+        width: 100%;
+    }
 }
