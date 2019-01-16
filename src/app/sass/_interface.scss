@@ -1,0 +1,11 @@
+@import './variables';
+.navbar-item {
+    padding-top: 0.825rem;
+    padding-bottom: 0.825rem;
+    font-size: 0.9rem;
+    color: $light-grey-font;
+    i {
+        width: 15px;
+        margin-right: 1rem;
+    }
+}

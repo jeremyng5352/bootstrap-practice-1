@@ -1,9 +1,6 @@
+@import '../../sass/interface';
 @import '../../sass/variables';
 $horizontal-padding: 1.25rem;
-$grey-font: #A5AEB6;
-$light-grey-font: rgb(196, 205, 212);
-$background-grey: #344052;
-$background-darker-grey: #2D3646;
 div#navbar-container {
     background: $background-grey;
     width: 100%;
@@ -27,25 +24,16 @@ div#navbar-container {
             font-size: 1.15rem;
         }
     }
-    ul#navbar-tabs {
+    .navbar-tabs {
         text-transform: capitalize;
         li {
-            padding: 0 $horizontal-padding;
+            padding-left: $horizontal-padding;
+            padding-right: $horizontal-padding;
         }
         li.navbar-header {
             font-size: 0.75rem;
             padding-top: 0.25rem;
             padding-bottom: 0.25rem;
-        }
-        li.navbar-item {
-            padding-top: 0.825rem;
-            padding-bottom: 0.825rem;
-            font-size: 0.9rem;
-            color: $light-grey-font;
-            i {
-                width: 15px;
-                margin-right: 1rem;
-            }
         }
         ul.item-tabs {
             li.navbar-item {
